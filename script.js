@@ -1,13 +1,13 @@
 let homeScoreEl = document.getElementById("score-home");
-let guestScoreEl = document.getElementById("score-guest");
+let awayScoreEl = document.getElementById("score-away");
 
 let homeIncrease1 = document.getElementById("home1");
 let homeIncrease2 = document.getElementsById("home2");
 let homeIncrease3 = document.getElementById("home3");
 
-let guestIncrease1 = document.getElementById("guest1");
-let guestIncrease2 = document.getElementById("guest2");
-let guestIncrease3 = document.getElementById("guest3");
+let awayIncrease1 = document.getElementById("away1");
+let awayIncrease2 = document.getElementById("away2");
+let awayIncrease3 = document.getElementById("away3");
 
 function scoreIncrease1() {
   let currentScore = Number(homeScoreEl.textContent);
@@ -27,22 +27,22 @@ function scoreIncrease3() {
   homeScoreEl.textContent = currentScore;
 }
 
-// guest scores //
+// away scores //
 
-function guestScoreIncrease1() {
-  let currentScore = Number(guestScoreEl.textContent);
+function awayScoreIncrease1() {
+  let currentScore = Number(awayScoreEl.textContent);
   currentScore += 1;
   guestScoreEl.textContent = currentScore;
 }
 
-function guestScoreIncrease2() {
-  let currentScore = Number(guestScoreEl.textContent);
+function awayScoreIncrease2() {
+  let currentScore = Number(awayScoreEl.textContent);
   currentScore += 2;
   guestScoreEl.textContent = currentScore;
 }
 
-function guestScoreIncrease3() {
-  let currentScore = Number(guestScoreEl.textContent);
+function awayScoreIncrease3() {
+  let currentScore = Number(awayScoreEl.textContent);
   currentScore += 3;
   guestScoreEl.textContent = currentScore;
 }
